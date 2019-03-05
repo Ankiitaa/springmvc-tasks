@@ -35,7 +35,6 @@ public class UserController {
 
     @RequestMapping("/hello")
     public String greet(Model model){
-
         model.addAttribute("username","sehun");
      return "hello";
     }
@@ -50,7 +49,7 @@ public class UserController {
     @RequestMapping("/hello3")
     public String greet2(ModelAndView modelAndView){
         //to do
-        modelAndView.setViewName("display");
+        modelAndView.setViewName("hello3");
         modelAndView.addObject("username","Baek");
         return "hello3";
     }
